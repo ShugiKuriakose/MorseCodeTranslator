@@ -1,38 +1,14 @@
+import { morseObject } from "./morseObject.js";
+const morsecodeObject = morseObject;
+
 export const translatemorsecode = (val) => {
-  const morsecodeObject = {
-    A: ".-",
-    B: "-...",
-    C: "-.-.",
-    D: "-..",
-    E: ".",
-    F: "..-.",
-    G: "--.",
-    H: "....",
-    I: "..",
-    J: ".---",
-    K: "-.-",
-    L: ".-..",
-    M: "--",
-    N: "-.",
-    O: "---",
-    P: ".--.",
-    Q: "--.-",
-    R: ".-.",
-    S: "...",
-    T: "-",
-    U: "..-",
-    W: ".--",
-    X: "-..-",
-    Y: "-.--",
-    Z: "--..",
-  };
   const morseToEngObj = toTranslate(morsecodeObject);
 
   const valArray = val.split(" ");
   const engArray = valArray.map((value) => {
     if (Object.keys(morseToEngObj).includes(value)) {
       return morseToEngObj[value];
-    } else if (value === "/") return "  ";
+    } else if (value === "/") return " ";
     else return "#";
   });
 

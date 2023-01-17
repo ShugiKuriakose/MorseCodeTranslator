@@ -1,0 +1,15 @@
+{
+  "name": "jest-testing-morsetranslator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "morseToEng.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "author": "ShugiKuriakose",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "type": "module"
+}
