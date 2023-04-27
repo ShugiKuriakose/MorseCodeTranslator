@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background-color: adjust-hue($color: #1b99af, $degrees: 10);
+
+  h2 {
+    font-size: 80px;
+    color: aliceblue;
+  }
+
+  button {
+    font-size: 20px;
+  }
+
+  textarea {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 25px;
+    width: 50%;
+  }
+
+  .translated {
+    display: none;
+    border: 2px solid rgb(136, 186, 209);
+    margin: 25px;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+    background-color: aliceblue;
+  }
+}
